@@ -9,4 +9,14 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --accent-color:#FF0070;
+  --backg-image: url(../image/cover-image-light.png);
+  --accent-heading-clr: #FFC2E6;
+  --backg-color: #FFF1F7;
+  --main-bg: #FFF1F7;
+  --backg-title: #FF8DCB;
+  --color-txt: #353430;
+  --color-card-txt: #353430;
+  --corner: #353430;
+   --title-text: #353430;
 }
