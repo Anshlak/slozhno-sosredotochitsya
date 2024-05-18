@@ -3,8 +3,8 @@
   и их переопределение под различные устройства
 */
 :root {
-  --accent-color: #ff0070;  
-  --accent-heading-clr: #DB00FF; 
+  --accent-color: #ff0070;
+  --accent-heading-clr: #db00ff;
   --backg-image: url(../images/cover-image.png);
   --backg-color: #000028;
   --backg-title: #ff0070;
@@ -15,14 +15,12 @@
   --padding: 20px;
   --padding-mob: 10px;
   --main-bg: #000028;
-  --color-txt: #F1B2CE;
+  --color-txt: #f1b2ce;
   --color-title: #000028;
-  --color-card-txt: #FF0070;
+  --color-card-txt: #ff0070;
   --corner: #ff0070;
   --title-text: #000028;
-  --hover: #FF007066;
+  --hover: #ff007066;
   --focus: #353430;
-  --default: #FF0070;
-
+  --default: #ff0070;
 }
-
