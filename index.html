@@ -59,9 +59,11 @@
     <main class="main">
       <section class="main__topics">
         <article class="main__topics-cards">
-          <h2 class="main__cards-title why">
-            Почему сосредоточиться так сложно
-          </h2>
+          <div>
+            <h2 class="main__cards-title why">
+              Почему сосредоточиться так сложно
+            </h2>
+          </div>
           <div class="focus__topics multy">
             <h3 class="card-title">Многозадачность</h3>
             <p class="main__card-text">
@@ -95,10 +97,12 @@
           </div>
         </article>
         <article class="main__topics-cards midle">
-          <h2 class="main__cards-title what">
-            Что снижает концентрацию внимания?
-          </h2>        
-          <div>
+          <div class="second-title">
+            <h2 class="main__cards-title what">
+              Что снижает концентрацию внимания?
+            </h2>
+          </div>
+          <div class="what-item">
             <h3 class="card-title">Многозадачность</h3>
             <p class="main__card-text">
               Как концентрация может снижаться из-за… концентрации? Любая
@@ -109,7 +113,7 @@
               может не выдержать, если не давать ей отдохнуть.
             </p>
           </div>
-          <div>
+          <div class="what-item">
             <h3 class="card-title">Еда</h3>
             <p class="main__card-text">
               «Быстрые углеводы» — сахар, белый хлеб, сладости — молниеносно
@@ -120,7 +124,7 @@
               хотим ещё больше быстрых углеводов.
             </p>
           </div>
-          <div>
+          <div class="what-item ">
             <h3 class="card-title">Гаджеты</h3>
             <p class="main__card-text">
               Да-да, это та самая ситуация, когда на экране ноутбука — код, в
@@ -143,6 +147,7 @@
               5 простых (на самом деле не очень) советов
             </h3>
           </div>
+          
           <div class="other-rules">
             <h3 class="card-title">Представьте небо и облака</h3>
             <p class="main__card-text">
@@ -200,8 +205,11 @@
           </div>
         </article>
       </section>
-      <section>
+      <section class="main__topics">
+        <div class="govno">
+        <div class="images">
         <h2 class="main__cards-title pictures-title">А можно в картинках?</h2>
+        </div>
         <div class="card__items">
           <img
             class="card__item img-sunset"
@@ -234,10 +242,11 @@
             loading="lazy"
           />
         </div>
+        </div>
       </section>
     </main>
     <footer class="footer decorated-zone">
-      <h2 class="footer-title"> focus</h2>
+      <h2 class="footer-title">focus</h2>
     </footer>
     <script src="./scripts/script.js"></script>
   </body>
