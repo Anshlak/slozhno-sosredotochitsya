@@ -4,7 +4,7 @@
   переключая тему
 */
 @media (prefers-color-scheme: light) {
-  :root{
+  :root {
   --accent-color:#FF0070;
   --backg-image: url(../image/cover-image-light.png);
   --accent-heading-clr: #FFC2E6;
@@ -19,7 +19,7 @@
   --focus: #FF0070;
   --default: #FF0070;
   }
-} 
+ 
 
 .page.theme_light {
   /* сохраните этот селектор в приведённом виде.
@@ -39,4 +39,5 @@
   --hover: #FFF1F7;
   --focus: #FF0070;
   --default: #FF0070;
+}
 }

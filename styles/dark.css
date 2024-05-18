@@ -24,9 +24,9 @@
   --title-text: #000028;
   --hover: #FF007066;
   --focus: #353430;
-  --default: #FFF1F7
+  --default: #FFF1F7;
 }
-  }
+  
 
 
 .page.theme_dark {
@@ -54,8 +54,6 @@
   --hover: #FF007066;
   --focus: #353430;
   --default: #FFF1F7  
-
-
-
+}
 
 }
