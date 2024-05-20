@@ -8,13 +8,13 @@
     <meta name="decription" content=" Проект Сложно сосредоточиться" />
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
+    <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/dark.css" />
     <link rel="stylesheet" href="./styles/light.css" />
-    <link rel="stylesheet" href="./styles/globals.css" />    
     <link rel="icon" href="./images/favicon.ico" />
     <link rel="icon" href="./images/favicon.svg" sizes="any" />
-    <link rel="mobile-icon-touch" href="./images/mobile-icon.png" />
+    <link rel="apple-icon-touch" href="../images/mobile-icon.png" />
     <title>Сложно сосредоточиться</title>
   </head>
   <body class="page">
@@ -48,12 +48,13 @@
       </nav>
       <h1 class="cover__title">no focus</h1>
       <section class="cover">
-        <p class="cover__text">
-          Что делать, когда не можешь делать ничего
-          <br />
-          Или почему нам так сложно сконцентрироваться, особенно когда очень
-          надо
-        </p>
+        <div class="cover__text">
+          <p>Что делать, когда не можешь делать ничего</p>
+          <p>
+            Или почему нам так сложно сконцентрироваться, особенно когда очень
+            надо
+          </p>
+        </div>
       </section>
     </header>
     <main class="main">
@@ -97,7 +98,7 @@
           </div>
         </article>
         <article class="main__topics-cards midle">
-          <div class="second-title">
+          <div class="content-title">
             <h2 class="main__cards-title what">
               Что снижает концентрацию внимания?
             </h2>
@@ -124,7 +125,7 @@
               хотим ещё больше быстрых углеводов.
             </p>
           </div>
-          <div class="what-item ">
+          <div class="what-item">
             <h3 class="card-title">Гаджеты</h3>
             <p class="main__card-text">
               Да-да, это та самая ситуация, когда на экране ноутбука — код, в
@@ -147,9 +148,9 @@
               5 простых (на самом деле не очень) советов
             </h3>
           </div>
-          
+
           <div class="other-rules">
-            <h3 class="card-title">Представьте небо и облака</h3>
+            <h3 class="card-title other-rules-title">Представьте небо и облака</h3>
             <p class="main__card-text">
               Или листья в ручье. Тут дело в лёгкой медитации, которая помогает
               успокоиться. Ведь часто именно тревожные мысли о сложных задачах
@@ -162,7 +163,7 @@
             </p>
           </div>
           <div class="other-rules">
-            <h3 class="card-title">Включите музыку</h3>
+            <h3 class="card-title other-rules-title">Включите музыку</h3>
             <p class="main__card-text">
               Но не любую, и не любимую. Любимая может быть связана с сильными
               положительными эмоциями, которые тоже очень сильно отвлекают.
@@ -171,7 +172,7 @@
             </p>
           </div>
           <div class="other-rules">
-            <h3 class="card-title">Прогуляйтесь</h3>
+            <h3 class="card-title other-rules-title">Прогуляйтесь</h3>
             <p class="main__card-text">
               Или даже пробегитесь. Лучше найти парк или лес: один эксперимент
               <a
@@ -186,7 +187,7 @@
             </p>
           </div>
           <div class="other-rules">
-            <h3 class="card-title">Хорошо ешьте</h3>
+            <h3 class="card-title other-rules-title">Хорошо ешьте</h3>
             <p class="main__card-text">
               Мы — не ваша бабушка, но это правда важно. Выбирайте продукты,
               которые препятствуют резким скачкам сахара в крови. Например, с
@@ -195,7 +196,7 @@
             </p>
           </div>
           <div class="other-rules">
-            <h3 class="card-title">Читайте</h3>
+            <h3 class="card-title other-rules-title">Читайте</h3>
             <p class="main__card-text">
               Настоящие бумажные книги. Это правда помогает с концентрацией:
               чтобы прочитать пост в соцсети, достаточно нескольких минут или
@@ -206,42 +207,44 @@
         </article>
       </section>
       <section class="main__topics">
-        <div class="govno">
-        <div class="images">
-        <h2 class="main__cards-title pictures-title">А можно в картинках?</h2>
-        </div>
-        <div class="card__items">
-          <img
-            class="card__item img-sunset"
-            src="./images/sunset.png"
-            alt="Рассвет"
-            loading="lazy"
-          />
-          <img
-            class="card__item img-ice-cream"
-            src="./images/ice-cream.png"
-            alt="Мороженое"
-            loading="lazy"
-          />
-          <img
-            class="card__item img-tape"
-            src="./images/tape.png"
-            alt="Кассета"
-            loading="lazy"
-          />
-          <img
-            class="card__item img-books"
-            src="./images/books.png"
-            alt="Книги"
-            loading="lazy"
-          />
-          <img
-            class="card__item img-street"
-            src="./images/street.png"
-            alt="Улица"
-            loading="lazy"
-          />
-        </div>
+        <div class="main_images">
+          <div class="images">
+            <h2 class="main__cards-title pictures-title">
+              А можно в картинках?
+            </h2>
+          </div>
+          <div class="card__items">
+            <img
+              class="card__item img-sunset"
+              src="./images/sunset.png"
+              alt="Рассвет"
+              loading="lazy"
+            />
+            <img
+              class="card__item img-ice-cream"
+              src="./images/ice-cream.png"
+              alt="Мороженое"
+              loading="lazy"
+            />
+            <img
+              class="card__item img-tape"
+              src="./images/tape.png"
+              alt="Кассета"
+              loading="lazy"
+            />
+            <img
+              class="card__item img-books"
+              src="./images/books.png"
+              alt="Книги"
+              loading="lazy"
+            />
+            <img
+              class="card__item img-street"
+              src="./images/street.png"
+              alt="Улица"
+              loading="lazy"
+            />
+          </div>
         </div>
       </section>
     </main>

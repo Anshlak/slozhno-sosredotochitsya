@@ -20,7 +20,10 @@
   --color-card-txt: #ff0070;
   --corner: #ff0070;
   --title-text: #000028;
-  --hover: #ff007066;
+  --hover: rgba(255, 0, 112, 0.4);
   --focus: #353430;
   --default: #ff0070;
+  --shadow-txt:#FF0070;
+  --hover-txt: #F1B2CE;
+  --focus-txt: #F1B2CE;
 }

@@ -1,7 +1,6 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background-image: var(--backg-image);
   background-position: center;
   background-repeat: no-repeat;
@@ -21,7 +20,6 @@
   justify-items: end;
   font-family: var(--main-font);
   padding: var(--padding);
-  /* border: 1px solid red; убрать */
 }
 
 .decorated-zone::before {
@@ -46,29 +44,6 @@
   left: 20px;
 }
 
-.header__icon-rec {
-  color: var(--accent-color);
-  font-family: var(--main-font);
-  font-size: var(--font-size);
-  font-weight: 400;
-  line-height: 25px;
-  position: absolute;
-  top: 20px;
-  right: 48px;
-}
-
-.header__icon-rec::after {
-  content: "";
-  position: absolute;
-  inline-size: 9px;
-  block-size: 9px;
-  border-radius: 50%;
-  background-color: var(--accent-color);
-  box-shadow: 0 0 4px 2px var(--accent-color);
-  top: 8px;
-  left: 42px;
-}
-
 .header__theme-menu {
   justify-self: center;
   align-self: start;
@@ -83,15 +58,15 @@
 
 .header__theme-menu-button:hover {
   outline: 1px solid var(--hover);
+  border: none;
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
 }
 
 .header__theme-menu-button:focus-visible {
   border-bottom: 1px solid var(--focus);
-}
-
-.header__theme-menu-button_active {
-  outline: 1px solid #ff0070;
-  pointer-events: none;
 }
 
 .header__theme-menu-button {
@@ -103,11 +78,16 @@
   color: var(--accent-color);
   text-transform: lowercase;
   text-align: center;
-  outline: none;
   background: transparent;
   cursor: pointer;
-  border: 0;
+  border: none;
   padding: 2px 13px;
+  appearance: none;
+}
+
+.header__theme-menu-button_active {
+  outline: 1px solid var(--default);
+  pointer-events: none;
 }
 
 .cover__title {
@@ -119,13 +99,7 @@
   line-height: 82.5%;
   justify-self: start;
   text-shadow: 4px 4px 0 var(--accent-color);
-  margin-left: -20px;
-  filter: blur(6px);
-}
-
-.cover__title:hover {
-  filter: blur(0px);
-  transition: 0.4s ease;
+  margin-left: -20px;  
 }
 
 .cover__text {
@@ -138,7 +112,6 @@
 }
 
 .main {
-  background-color: var(--main-bg);
   padding: var(--padding);
   padding-block-start: 60px;
   padding-block-end: 60px;
@@ -162,12 +135,11 @@
   font-size: var(--font-size);
   font-weight: 700;
   line-height: 23.4px;
-
-  /* background-color: var(--accent-color); */
 }
 
 .focus__topics {
   grid-column: 2 / 4;
+  padding-inline-start: 6px;
 }
 
 .main__card-text {
@@ -181,17 +153,20 @@
 }
 
 .focus__cards-link {
-  text-shadow: 2px 1px 0 var(--accent-color);
-  text-decoration: none;
-  cursor: pointer;
+  text-shadow: 2px 1px 0 var(--shadow-txt);
+  text-decoration: none;  
 }
 
 .focus__cards-link:hover {
-  border-bottom: 1px solid var(--hover);
+  border-bottom: 1px solid var(--hover-txt);
 }
 
-.focus__cards-link:focus {
-  outline: 1px solid var(--focus);
+.focus__cards-link:focus{
+  outline: none;
+}
+
+.focus__cards-link:focus-visible {
+  outline: 1px solid var(--focus-txt);
 }
 
 .card-title {
@@ -202,11 +177,9 @@
   font-weight: 700;
 }
 
-.second-title {
-  display: grid;
-  /* grid-template-columns: repeat(3, 1fr); */
-  /* margin-block-start: 4px;  */
 
+.content-title {
+  display: grid; 
 }
 
 
@@ -214,8 +187,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: min-content 1fr;
-  gap: var(--gap);
-  /* padding-block-start: 20px; */
+  gap: var(--gap);  
 
 }
 
@@ -232,8 +204,6 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: min-content repeat(5, min-content);
   gap: var(--gap);
-  /* padding-block-start: 6px; */
-
 }
 
 .how {
@@ -242,19 +212,28 @@
 
 .five-rules {
   grid-column: 2 / 4;
+  padding-inline-start: 4px;
+  padding-block-start: 2px;
+  font-weight: 700;
 }
 
 .other-rules {
   grid-column: 2 / 4;
+  padding-inline-start: 4px;
+  padding-block-start: 2px;
 }
 
-.govno {
+.other-rules-title{
+  font-weight: 400;
+}
+
+.main_images {
   display: grid;
   gap: 20px;
 }
 
 .images {
-  padding-block-start: 84px;
+  padding-block-start: 82px;
 }
 .pictures-title {
   background-color: var(--backg-title);
@@ -298,8 +277,7 @@
 
 .footer {
   display: flex;
-  position: relative;
-  background-color: var(--main-bg);
+  position: relative;  
   justify-content: center;
   align-items: center;
   padding: var(--padding);
@@ -312,7 +290,7 @@
   font-weight: 700;
   font-family: var(--main-font);
   line-height: 82.5%;
-  text-shadow: 4px 4px 0 var(--accent-color);
+  text-shadow: 2px 2px 0 var(--accent-color);
   padding-block-end: 80px;
 
 }
@@ -329,8 +307,7 @@
     max-width: 364px;
   }
   .main__topics-cards {
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;    
   }
 
   .what {
@@ -342,9 +319,7 @@
     flex-direction: column;
   }
 
-  .end {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+  .end {        
     grid-template-rows: 23px 314px 198px 290px 197px 175px;
   }
 
@@ -353,9 +328,7 @@
 @media (width <= 400px) {
   
   .header {
-    padding: var(--padding-mob);
-    grid-template-rows: 1fr min-content 1fr;
-
+    padding: var(--padding-mob); 
   }
 
   .decorated-zone {
@@ -404,6 +377,10 @@
 
   .how {
     padding-block-end: 4px;
+  }
+
+  .main_images {
+    gap: 10px;
   }
 
   .images {

@@ -1,8 +1,48 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
+.page.theme_dark {
+  --accent-color: #ff0070;
+  --accent-heading-clr: #db00ff;
+  --backg-image: url(../images/cover-image-dark.png);
+  --backg-color: #000028;
+  --backg-title: #ff0070; 
+  --main-font: IBM Plex Mono, Bold, sans-serif;
+  --cover-text: #000028;
+  --main-bg: #000028;
+  --color-txt: #f1b2ce;
+  --color-title: #000028;
+  --color-card-txt: #ff0070;
+  --corner: #ff0070;
+  --title-text: #000028;
+  --hover: rgba(255, 0, 112, 0.4);
+  --focus: #353430;
+  --default: rgba(255, 0, 112, 1);
+  --shadow-txt:#FF0070;
+  --hover-txt: #F1B2CE;
+  --focus-txt: #F1B2CE;
+}
+
+.theme_dark .header__icon-rec {
+    color: var(--accent-color);
+    font-family: var(--main-font);
+    font-size: var(--font-size);
+    font-weight: 400;
+    line-height: 25px;
+    position: absolute;
+    top: 20px;
+    right: 48px;
+}
+
+.theme_dark .header__icon-rec::after {
+    content: "";
+    position: absolute;
+    inline-size: 9px;
+    block-size: 9px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    box-shadow: 0 0 4px 2px var(--accent-color);
+    top: 8px;
+    left: 42px;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --accent-color: #ff0070;
@@ -10,47 +50,43 @@
     --backg-image: url(../images/cover-image-dark.png);
     --backg-color: #000028;
     --backg-title: #ff0070;
-    --font-size: 18px;
-    --gap: 20px;
     --main-font: IBM Plex Mono, Bold, sans-serif;
     --cover-text: #000028;
-    --padding: 20px;
-    --padding-mob: 10px;
     --main-bg: #000028;
     --color-txt: #f1b2ce;
     --color-title: #000028;
     --color-card-txt: #ff0070;
     --corner: #ff0070;
     --title-text: #000028;
-    --hover: #ff007066;
+    --hover: rgba(255, 0, 112, 0.4);
     --focus: #353430;
-    --default: #fff1f7;
+    --default: rgba(255, 0, 112, 1);
+    --shadow-txt:#FF0070;
+    --hover-txt: #F1B2CE;
+    --focus-txt: #F1B2CE;
   }
 
-  .page.theme_dark {
-    /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
-    --accent-color: #ff0070;
-    --accent-heading-clr: #db00ff;
-    --backg-image: url(../images/cover-image-dark.png);
-    --backg-color: #000028;
-    --backg-title: #ff0070;
-    --font-size: 18px;
-    --gap: 20px;
-    --main-font: IBM Plex Mono, Bold, sans-serif;
-    --cover-text: #000028;
-    --padding: 20px;
-    --padding-mob: 10px;
-    --main-bg: #000028;
-    --color-txt: #f1b2ce;
-    --color-title: #000028;
-    --color-card-txt: #ff0070;
-    --corner: #ff0070;
-    --title-text: #000028;
-    --hover: #ff007066;
-    --focus: #353430;
-    --default: #fff1f7;
+  .header__icon-rec {
+    color: var(--accent-color);
+    font-family: var(--main-font);
+    font-size: var(--font-size);
+    font-weight: 400;
+    line-height: 25px;
+    position: absolute;
+    top: 20px;
+    right: 48px;
+  }
+
+  .header__icon-rec::after {
+    content: "";
+    position: absolute;
+    inline-size: 9px;
+    block-size: 9px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    box-shadow: 0 0 4px 2px var(--accent-color);
+    top: 8px;
+    left: 42px;
   }
 }
+
