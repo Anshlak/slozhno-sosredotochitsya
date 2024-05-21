@@ -3,7 +3,7 @@
   --accent-heading-clr: #db00ff;
   --backg-image: url(../images/cover-image-dark.png);
   --backg-color: #000028;
-  --backg-title: #ff0070; 
+  --backg-title: #ff0070;
   --main-font: IBM Plex Mono, Bold, sans-serif;
   --cover-text: #000028;
   --main-bg: #000028;
@@ -15,32 +15,39 @@
   --hover: rgba(255, 0, 112, 0.4);
   --focus: #353430;
   --default: rgba(255, 0, 112, 1);
-  --shadow-txt:#FF0070;
-  --hover-txt: #F1B2CE;
-  --focus-txt: #F1B2CE;
+  --shadow-txt: #ff0070;
+  --hover-txt: #f1b2ce;
+  --focus-txt: #f1b2ce;
 }
 
 .theme_dark .header__icon-rec {
-    color: var(--accent-color);
-    font-family: var(--main-font);
-    font-size: var(--font-size);
-    font-weight: 400;
-    line-height: 25px;
-    position: absolute;
-    top: 20px;
-    right: 48px;
+  color: var(--accent-color);
+  font-family: var(--main-font);
+  font-size: var(--font-size);
+  font-weight: 400;
+  line-height: 25px;
+  position: absolute;
+  top: 20px;
+  right: 48px;
 }
 
 .theme_dark .header__icon-rec::after {
-    content: "";
-    position: absolute;
-    inline-size: 9px;
-    block-size: 9px;
-    border-radius: 50%;
-    background-color: var(--accent-color);
-    box-shadow: 0 0 4px 2px var(--accent-color);
-    top: 8px;
-    left: 42px;
+  content: "";
+  position: absolute;
+  inline-size: 9px;
+  block-size: 9px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  box-shadow: 0 0 4px 2px var(--accent-color);
+  top: 8px;
+  left: 42px;
+}
+
+@media (width <= 400px) {
+  .theme_dark .header__icon-rec {
+    top: 10px;
+    right: 38px;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -61,9 +68,9 @@
     --hover: rgba(255, 0, 112, 0.4);
     --focus: #353430;
     --default: rgba(255, 0, 112, 1);
-    --shadow-txt:#FF0070;
-    --hover-txt: #F1B2CE;
-    --focus-txt: #F1B2CE;
+    --shadow-txt: #ff0070;
+    --hover-txt: #f1b2ce;
+    --focus-txt: #f1b2ce;
   }
 
   .header__icon-rec {
@@ -90,3 +97,9 @@
   }
 }
 
+@media (prefers-color-scheme: dark) and (width <= 400px) {
+  .header__icon-rec {
+    top: 10px;
+    right: 38px;
+  }
+}
