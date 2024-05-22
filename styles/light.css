@@ -5,21 +5,22 @@
   --backg-color: #fff1f7;
   --main-bg: #fff1f7;
   --backg-title: #ff8dcb;
+  --clr-head-button: #353430;
   --color-txt: #353430;
+  --color-title: #353430;
   --color-card-txt: #353430;
   --corner: #353430;
   --title-text: #353430;
   --hover: rgba(50, 49, 45, 0.4);
-  --focus: #ff0070;
+  --focus: #353430;
   --default: #353430;
   --shadow-txt:#FF8DCB;
   --hover-txt: #353430;
   --focus-txt: #353430;
+  --icon-rec: none;
 }
 
-.theme_light .header__icon-rec {
-  display: none;
-} 
+
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -30,6 +31,7 @@
     --main-bg: #fff1f7;
     --backg-title: #ff8dcb;
     --color-txt: #353430;
+    --color-title: #353430;
     --color-card-txt: #353430;
     --corner: #353430;
     --title-text: #353430;
@@ -39,10 +41,9 @@
     --shadow-txt:#FF8DCB;
     --hover-txt: #353430;
     --focus-txt: #353430;
+    --icon-rec: none;
   }
-
-  .header__icon-rec {
-    display: none;
-  }
+ 
+  
   
 }

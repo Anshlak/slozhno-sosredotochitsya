@@ -8,9 +8,10 @@
   --backg-image: url(../images/cover-image.png);
   --backg-color: #000028;
   --backg-title: #ff0070;
+  --clr-head-button: #FF0070;
   --font-size: 18px;
   --gap: 20px;
-  --main-font: IBM Plex Mono, Bold, sans-serif;
+  --main-font: 'IBM Plex mono', Courier, monospace;
   --cover-text: #000028;
   --padding: 20px;
   --padding-mob: 10px;
@@ -26,4 +27,5 @@
   --shadow-txt:#FF0070;
   --hover-txt: #F1B2CE;
   --focus-txt: #F1B2CE;
+  --icon-rec: block;
 }
